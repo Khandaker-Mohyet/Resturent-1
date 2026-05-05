@@ -52,13 +52,20 @@
   </nav>
 
   <!-- BREADCRUMB -->
+  <nav class="container mt-4" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
 
 
 
 
 
   <!-- main section -->
-  <section class="container my-5">
+  <section class="container my-4">
     <div class="card mb-3">
       <div class="row g-0">
         <div class="col-md-4 zoom-container-main">
@@ -66,16 +73,110 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <h3 class="card-title">Card title</h3>
+            <h5>Price: </h5>
+            <h6>Ingredients: </h6>
+            <!-- quantaty section -->
+            <!-- Quantity -->
+            <div class="d-flex align-items-center mb-3">
+              <button class="btn btn-outline-dark" onclick="decrease()">-</button>
+              <input type="text" id="qty" value="1" class="form-control text-center mx-2" style="width:60px;">
+              <button class="btn btn-outline-dark" onclick="increase()">+</button>
+            </div>
+            <button class="btn btn-primary">Order Now</button>
+
+
           </div>
         </div>
       </div>
     </div>
 
 
+  </section>
+
+  <!-- Description section -->
+  <section class="container">
+    <h3>Dish Details</h3>
+    <p>
+      This delicious cheese pizza is made with fresh ingredients and baked to perfection.
+      Perfect for lunch or dinner with family and friends. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+      nam doloribus dicta nesciunt deleniti ullam ipsam illum? Exercitationem ex explicabo architecto reprehenderit ut
+      possimus, placeat, tempora dolorum, fugit ad cum?
+    </p>
+
+    <h5>Nutrition Info</h5>
+    <ul>
+      <li>Calories: 250 kcal</li>
+      <li>Protein: 10g</li>
+      <li>Fat: 12g</li>
+    </ul>
+  </section>
+  <section class="container my-5">
+    <h1 class="section-title">Related Dish Section</h1>
+
+    <!-- Card -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="/Image/card-1.jpg" class="card-img-top card-img" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h5 class="">Price: </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <button class="btn btn-primary">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/Image/card-2.jpg" class="card-img-top card-img" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h5 class="">Price: </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <button class="btn btn-primary">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/Image/card-5.jpg" class="card-img-top card-img" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h5 class="">Price: </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <button class="btn btn-primary">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/Image/card-4.jpg" class="card-img-top card-img" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h5 class="">Price: </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <button class="btn btn-primary">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/Image/card-7.jpg" class="card-img-top card-img" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h5 class="">Price: </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <button class="btn btn-primary">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
@@ -85,6 +186,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="/Js/script.js"></script>
 </body>
 
 </html>
